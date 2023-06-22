@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_country_code
+    description: "For creating table with csv file"
+    columns:
+      - name: country_code
+        description: "This is the primary key"
+        tests:
+          - unique
+          - not_null
+      - name: country_name
+        description: "This is the secondary key"
+        tests:
+          - unique
+          - not_null
+# models:
+#   - name: target_stg_cc
+#     description: "For creating table with csv file"
+#     columns:
+#       - name: country_code
+#         description: "This is the primary key"
+#         tests:
+#           - unique
+#           - not_null
+#       - name: country_name
+#         description: "This is the secondary key"
+#         tests:
+#           - unique
+#           - not_null
